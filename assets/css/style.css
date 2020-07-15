@@ -39,6 +39,13 @@
 	100%{opacity: 1;}
 }
 
+@media screen and (max-width:800px) {
+  #typewriter {
+    font-size: 20px;
+    margin-left: -240px; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+<
 nav {
 	margin: 0; 
 	font-family: 'Poppins', sans-serif;
