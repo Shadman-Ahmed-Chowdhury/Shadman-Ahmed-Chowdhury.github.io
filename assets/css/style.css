@@ -1,0 +1,98 @@
+.var-highlight{
+	color: #C0AD60;
+}
+.string-highlight{
+	color: #cbd911;
+	text-shadow: 2px 2px black;
+}
+.banner {
+	margin-top: -24px;
+	background: #1a1f0a;
+	height: 630px;
+}
+#typewriter{
+		
+		font-size: 40px;
+		font-family: "Courier New";
+		padding-top: 60px;
+		margin-left: -350px;
+		color: white;
+		text-shadow: 2px 2px black;
+		&:after{
+			content: "|";
+			animation: blink 500ms linear infinite alternate;
+		}
+}
+
+@-webkit-keyframes blink{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+@-moz-keyframes blink{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+@keyframes blink{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+nav {
+	margin: 0; 
+	font-family: 'Poppins', sans-serif;
+
+}
+.bg {
+	background-color: #1a1f0a;
+}
+.navbar-brand {
+	font-size: 25px;
+}
+
+ul {
+	margin: auto 0;
+	padding: 5px 10px;
+	list-style: none;		
+	display: table;
+	text-align: center; 
+
+}
+li {
+	display: table-cell; 
+	position: relative;
+	
+}
+li a {
+	color: #fff!important; 
+	font-size: 16px;
+	text-decoration: none; 
+	letter-spacing: 0.06em; 
+	display: inline-block;
+	padding: 10px 20px;
+	position: relative;
+}
+li a:after {
+	background: none repeat scroll 0 0 trasparent; 
+	bottom: 0; 
+	content: "";
+	display: block; 
+	height: 2px; 
+	left: 50%; 
+	position: absolute; 
+	background: #fff; 
+	transition: width 0.3s ease 0s, left 0.3s ease 0s;
+	width: 0;
+}
+li a:hover:after {
+	width: 100%; 
+	left: 0; 
+}
+
+
+@media screen and(max-height: 300px) {
+	ul {
+		margin-top: 40px; 
+	}
+}
