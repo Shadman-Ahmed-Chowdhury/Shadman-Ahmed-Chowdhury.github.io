@@ -8,6 +8,8 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
+
+	<!--Navbar -->
 	<nav class="navbar navbar-expand-lg navbar-inverse navbar-dark bg mb-4">
 		<div class="container">
 			<!--Navbar Title-->
@@ -27,7 +29,7 @@
 		    		<!--Navbar Menu Right Side-->
 
 		    		<li class="nav-item">
-			        	<a class="nav-link" href="/">Home </a>
+			        	<a class="nav-link" href="#banner">Home </a>
 			      	</li>
 			      	<li class="nav-item">
 			        	<a class="nav-link" href="https://drive.google.com/file/d/16R0-EpCWfbHuO7ncLg28f-TtuN7A-EDU/view?usp=sharing" target="_blank">
@@ -35,10 +37,10 @@
 			        	</a>
 			      	</li>
 			      	<li class="nav-item">
-			        	<a class="nav-link " href="#">Work</a>
+			        	<a class="nav-link" href="#projects">Projects</a>
 			     	</li>
 			      	<li class="nav-item">
-			        	<a class="nav-link " href="#">About</a>
+			        	<a class="nav-link " href="#about">About</a>
 			     	</li>
 		    		<li class="nav-item">
 			      		<a href="https://shadman87.wordpress.com/" target="_blank" class="nav-link"> Blog</a>
@@ -51,9 +53,10 @@
 			</div>
 		</div>
 	</nav>
+	<!--Navbar End-->
 
-	
-	<div class="banner">
+	<!--Banner-->
+	<div id="banner" class="banner">
 		<pre id="typewriter">
 			<span class="var-highlight">var</span> portfolio = {
 			    name: <span class="string-highlight">'Shadman'</span>,
@@ -65,9 +68,109 @@
 			};
 		</pre>
 	</div>
+	<!--Banner End-->
+	
 
-	<h2 class="text-center">Under maintainance!</h2>
+	<!--Projects-->
+	<section id="projects">
+		<div class="projects container">
+			<div class="projects-header">
+				<h1 class="section-title text-center">Projects</h1>
+			</div>
+			
+		</div>
 
+		<div class="project-item">
+			<div class="container">
+				<div class="row text-center">
+					<div class="col-lg-6 project-info">
+						<h1 >CRM For Small Business</h1>
+						<p>
+							A simple Customer Relationship Management Web Application which helps business owners to keep track of the transactions of the business. Technology used: HTML, CSS, Bootstrap, JavaScript, Python, Django, SQLite. 
+						</p>
+						
+					</div>
+					<div class="col-lg-6 project-img">
+						<img src="./images/project-img1.png" alt="project image">
+					</div>		
+				</div>
+			</div>
+			
+			<div class="container">
+				<div class="row text-center">
+					<div class="col-lg-6 project-info">
+						<h1>Interactive TO-DO App</h1>
+						
+						<p>
+							An Interactive TO-DO app which can be used to keep track of various tasks and goals. The back-end of this app is built with Django REST framework and vanilla JS is used to handle the front-end. Technology used: HTML, CSS, Bootstrap, JS, Django, Django REST Framework, SQLite. 
+						</p>
+						
+					</div>
+					<div class="col-lg-6 project-img">
+						<img src="./images/project-img2.png" alt="project image">
+					</div>	
+						
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--Projects End-->
+
+
+	<!--About-->
+	<section id="about">
+		<div class="about">
+			<div class="projects-header">
+				<h1 class="section-title text-center">About</h1>
+			</div>
+
+			<p class="text-center">
+				I am a Competitive Programmer and Web Developer, living in Dhaka, Bangladesh. I make web applications, usually with django. I like to code things from scratch and enjoy bringing ideas to life in the browser. You can see some of the things I've worked on over on my <a href="#">Projects Page</a> and my <a href="#">GitHub Profile </a>. My Technical Stack: 				
+			</p>
+			<br>
+			<div class="row">
+				<div class="logo-wrapper col-sm-6 col-md-3">
+					<a href="#"><img src="./images/html-5.png"></a>
+				</div>
+				<div class="logo-wrapper  col-sm-6 col-md-3">
+					<a href="#"><img src="./images/css.png"></a>
+				</div>
+				<div class="logo-wrapper col-sm-6 col-md-3">
+					<a href="#"><img src="./images/javascript.png"></a>
+				</div>
+				<div class="logo-wrapper col-sm-6 col-md-3">
+					<a href="#"><img src="./images/python.png"></a>
+				</div>
+				<div class="logo-wrapper col-sm-6 col-md-3">
+					<a href="#"><img src="./images/django.png"></a>
+				</div>
+				<div class="logo-wrapper col-12 col-sm-6 col-md-3">
+					<a href="#"><img src="./images/sqlite.png"></a>
+				</div>
+				<div class="logo-wrapper col-12 col-sm-6 col-md-3">
+					<a href="#"><img src="./images/C++(3).png"> </a>
+				</div>
+				<div class="logo-wrapper col-12 col-sm-6 col-md-3">
+					<a href="#"><img src="./images/djangoRESTFramework.png"> </a>
+				</div>
+				<div class="logo-wrapper col-12 col-sm-6 col-md-3">
+					<a href="#"><img src="./images/bootstrap.png"> </a>
+				</div>
+				<div class="logo-wrapper col-12 col-sm-6 col-md-3">
+					<a href="#"><img src="./images/git.png"> </a>
+				</div>
+				<div class="logo-wrapper col-12 col-sm-6 col-md-3">
+					<a href="#"><img src="./images/github.png"> </a>
+				</div>
+				<div class="logo-wrapper col-12 col-sm-6 col-md-3">
+					<a href="#"><img src="./images/react.png"> </a>
+				</div>
+
+			</div>
+		</div>
+
+	</section>
+	<!--About End-->
 
 
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
