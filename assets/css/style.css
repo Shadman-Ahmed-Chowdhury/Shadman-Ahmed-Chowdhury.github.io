@@ -62,12 +62,7 @@ html {
 	100%{opacity: 1;}
 }
 
-@media screen and (max-width:800px) {
-  #typewriter {
-    font-size: 20px;
-    margin-left: -240px; /* The width is 100%, when the viewport is 800px or smaller */
-  }
-}
+
 
 .navbar ul li {
 	margin: 0; 
@@ -236,3 +231,53 @@ li a:hover:after {
 }
 
 /* About End */
+
+
+/* Media Queries */
+
+@media screen and (min-width:1200px) {
+  #typewriter {
+    font-size: 45px;
+    margin-left: -500px; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+
+@media screen and (max-width:1200px) and (min-width: 1024px) {
+  #typewriter {
+    font-size: 40px;
+    margin-left: -450px; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+@media screen and (max-width:1024px) and (min-width: 786px) {
+  #typewriter {
+    font-size: 30px;
+    margin-left: -320px; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+@media screen and (max-width:786px) and (min-width: 610px) {
+  #typewriter {
+    font-size: 24px;
+    margin-left: -240px; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+@media screen and (max-width:610px) and (min-width: 80px) {
+  #typewriter {
+    font-size: 20px;
+    margin-left: -210px; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+@media screen and (max-width:480px) and (min-width: 400px) {
+  #typewriter {
+    font-size: 17px;
+    margin-left: -200px; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+
+@media screen and (max-width:400px) and (min-width: 300px) {
+  #typewriter {
+    font-size: 15px;
+    margin-left: -200px; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+
+/* Media Queries End */
