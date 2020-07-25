@@ -69,3 +69,6 @@ typewriter = setupTypewriter(typewriter);
 
 typewriter.type();
 
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();   
+});
