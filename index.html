@@ -46,7 +46,7 @@
 			      		<a href="https://shadman87.wordpress.com/" target="_blank" class="nav-link"> Blog</a>
 			      	</li>
 			      	<li class="nav-item">
-			      		<a href="#" class="nav-link"> Contact</a>
+			      		<a href="#contact" class="nav-link"> Contact</a>
 			      	</li>
 		    	</ul>  
 		    	
@@ -196,11 +196,33 @@
 		</div>
 	</section>
 	<!--About End-->
+
 	<section id="contact">
-		<div class="contact">
+		<div class="contact container">
+			<h1 class="section-title text-center">Get In Touch</h1>
 			
+
+			<script type="text/javascript">var submitted=false;</script>
+     		<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='thank-you.html';}"></iframe>
+
+			<form id="contact-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd3DDMm95_6udI96axHLrR0Z2dGD_EvNv7y7lXn79ZqzDJgGw/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+				<label>Name</label>
+				<input class="input-field" type="text" name="entry.786122990">
+
+				<label>Subject</label>
+				<input class="input-field" type="text" name="entry.2099363947">
+
+				<label>Email</label>
+				<input class="input-field" type="email" name="entry.936036663">
+
+				<label>Message</label>
+				<textarea class="input-field" name="entry.1940268805"> </textarea>
+				<input id="submit-btn" type="submit" value="Send">
+			</form>
 		</div>
 	</section>
+
+
 
 	<!--Boostrap JS-->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
