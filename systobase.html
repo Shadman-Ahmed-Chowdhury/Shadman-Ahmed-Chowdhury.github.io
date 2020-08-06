@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SystoBase</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	
+	<style type="text/css">
+		@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+		@import 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'; 
+
+
+		* {
+			padding: 0; 
+			margin: 0;
+			box-sizing: border-box;
+			
+		}
+
+		body {
+			 
+			
+		}
+
+		#header {
+			position: sticky;
+			top: 0;
+			z-index: 10;
+			width: 100%;
+			height: 50px;
+		}
+
+		nav {
+			margin: 0; 
+			font-family: 'Poppins', sans-serif;
+			background-color: #00cba9;
+			max-height: 50px;
+			
+		}
+		.navbar {
+			background-color: #00cba9;
+		}
+		.navbar-brand {
+			font-size: 25px;
+			font-weight: 600;
+			letter-spacing: 0.1rem;
+		}
+		.navbar-collapse {
+
+			background-color: #00cba9;
+		}
+		.navbar-toggler {
+			outline: none !important;
+		}
+
+		.fa-bars {
+			color: #fff; 
+			font-size: 30px !important;
+		}
+
+		ul {
+			margin: auto 0;
+			padding: 5px 10px;
+			list-style: none;		
+			display: table;
+			text-align: center; 
+
+		}
+		li {
+			display: table-cell; 
+			position: relative;
+			
+		}
+		li a {
+			color: #fff!important; 
+			font-size: 18px;
+			font-weight: 600;
+			text-decoration: none; 
+			letter-spacing: 0.06em;
+			float: right; 
+			text-align: left;  
+			display: inline-block;
+			padding: 10px 10px;
+			position: relative;
+		}
+		li a:after {
+			background: none repeat scroll 0 0 trasparent; 
+			bottom: 0; 
+			content: "";
+			display: block; 
+			height: 2px; 
+			left: 50%; 
+			position: absolute; 
+			background: #fff; 
+			transition: width 0.3s ease 0s, left 0.3s ease 0s;
+			width: 0;
+		}
+		li a:hover:after {
+			width: 100%; 
+			left: 0; 
+		}
+
+		/************ Banner Section  *********************/
+
+
+		#banner {
+			width: 100%;
+
+			background-color: #00cba9;
+			color: #fff;
+			font-family: 'Montserrat', sans-serif;
+		}
+
+		.promo-title {
+			font-size: 50px; 
+			font-weight: 600;
+			margin-top: 80px;
+			text-shadow: 1px 1px green;
+		}
+
+		.promo {
+			font-size: 20px; 
+			font-weight: 500;
+
+		}
+
+		.banner-bg {
+			margin-top: 80px;
+			margin-bottom: -50px;
+
+		}
+		.banner-bg img {
+			margin: 0px auto; 
+			width: 600px; 
+			height: 250px;
+		}
+
+		/****** Services Section ********/
+
+		#services {
+			padding: 40px 40px;
+		}
+
+
+		.section-title {
+			
+			font-size: 60px;
+			font-family: 'Montserrat', sans-serif; 
+		}
+
+		.section-title::after {
+			content: '';
+			background: #00cba9;
+			height: 5px; 
+			width: 200px; 
+			margin-top: 5px;
+			margin-left: auto; 
+			margin-right: auto; 
+			margin-bottom: 50px;
+			display: block;
+		}
+
+
+		.services-img {
+			width: 150px; 
+
+		}
+		.services {
+			border: 1px solid #ddd;
+			margin: 10px auto;
+			padding: 30px 30px;
+			-webkit-box-shadow: 16px 23px 10px -6px rgba(199,187,199,0.82);
+			-moz-box-shadow: 16px 23px 10px -6px rgba(199,187,199,0.82);
+			box-shadow: 16px 23px 10px -6px rgba(199,187,199,0.82);
+			transition: background 0.7s ease; 
+			background-color: #f1f1f1; 
+		}
+		.services:hover {
+			background: #02e8c1;
+		}
+
+		.card-subtitle {
+			font-family: 'Montserrat', sans-serif; 
+		}
+
+
+		.btn-outline-dark {
+			margin-top: 20px;
+		}
+
+
+		/*********  Our Team *****/
+		#ourteam {
+			padding: 40px 40px;
+			text-align:center;
+			font-family: 'Montserrat', sans-serif; 
+		}
+
+		.sub-container {
+			width: 100%; 
+			margin: auto;
+			padding: 20px 20px 0px 0px;
+			display: flex; 
+			flex-wrap: wrap; 
+			justify-content: center; 
+		}
+
+
+		.members {
+			margin: 10px; 
+			padding: 20px;
+			max-width: 25%;
+			box-sizing: border-box;
+			cursor: pointer; 
+			transition: 0.3s;
+		}
+
+		.members:hover {
+			background: #ededed; 
+		}
+
+		.members img {
+			width: 100px;
+			height: 100px;
+			border: 1px solid #e1e0de; 
+			border-radius: 50%;
+		}
+
+		.name {
+			padding: 20px; 
+			font-size: 18px; 
+		}
+
+		.post {
+			font-style: italic; 
+		}
+
+		.social-media {
+			margin: 10px; 
+		}
+
+		.social-media a {
+			display: inline-block; 
+			height: 20px; 
+			width: 30px;
+			transition: 0.2s; 
+		}
+		.social-media a:hover {
+			transform: scale(1.3); 
+		}
+
+		.social-media a i {
+			color: #444;
+		}
+
+		@media screen and (max-width: 980px) {
+			.members {
+				max-width: 50%;
+			}
+		}
+		@media screen and (max-width: 600) {
+			.members {
+				max-width: 100%;
+			}
+		}
+
+
+		#ourwork {
+			padding: 40px 40px;
+			height: 500px;
+			
+		}
+
+
+
+
+
+
+
+
+		@media screen and(max-height: 300px) {
+			ul {
+				margin-top: 40px; 
+			}
+		}
+
+
+		
+	</style>
+
+</head>
+<body>
+
+	<!--Header section-->
+	<section id="header">
+		<nav class="navbar fixed-top navbar-expand-lg  navbar-dark mb-4 scrolling-navbar">
+			<div class="container">
+				<!--Navbar Title-->
+				<a href="/" class="navbar-brand ">SystoBase</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" 
+					data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				  	<i class="fa fa-bars"></i>
+				</button>
+
+				<!--Navbar Menu-->
+				 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				   
+			    	
+			    	<ul class="nav navbar-nav ml-auto">
+			    		<!--Navbar Menu Right Side-->
+
+			    		<li class="nav-item">
+				        	<a class="nav-link" href="#header">Home </a>
+				      	</li>
+				      	<li class="nav-item">
+				        	<a class="nav-link" href="#services">Services</a>
+				      	</li>
+				      
+				      	<li class="nav-item">
+				        	<a class="nav-link " href="#ourteam">Our Team</a>
+				     	</li>
+			    		<li class="nav-item">
+				      		<a href="#ourwork" class="nav-link"> Our Work</a>
+				      	</li>
+				      	<li class="nav-item">
+				      		<a href="#" class="nav-link">Contact</a>
+				      	</li>
+			    	</ul>  
+			    	
+				</div>
+			</div>
+		</nav>
+	</section>
+
+	<!--Banner section-->
+	<section id="banner">
+		
+		<div class="container">
+			<div class="row justify-content-end">
+				<div class="col-md-6 text-center">
+					<h2 class="promo-title">The Internet We Deserve</h2>
+					<p class="promo">Over the years, Pied Piper has changed many landscapes. Compression. Data. The Internet.</p>
+					<a href="#about" class="btn btn-lg btn-outline-light">About Us</a>
+
+
+				</div>
+				<div class="col-md-6 banner-bg">
+					<img src="images/banner-bg.svg" class="img-fluid">
+				</div>
+			</div>	
+		</div>	
+	</section>
+
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#00cba9" fill-opacity="1" d="M0,288L80,250.7C160,213,320,139,480,133.3C640,128,800,192,960,218.7C1120,245,1280,235,1360,229.3L1440,224L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+
+	<!--Services section-->
+	<section id="services">
+		<h1 class='text-center section-title'>
+			Services
+		</h1>
+		
+		<div class="row text-center">
+			<div class="col-lg-3 services">	
+			    <img src="images/responsive-design.svg" class="img-fluid services-img">
+			    <hr>
+			    <h3 class="card-subtitle mb-2 text-center">Responsive Web Design</h3>
+			    <a href="#" class="btn btn-block btn-outline-dark">Explore</a>
+			</div>
+			
+			
+			<div class="col-lg-3 services">
+			    <img src="images/web-development.svg" class="img-fluid services-img">
+			    <hr>
+			    <h3 class="card-subtitle mb-2 text-center">Full Stack Web Development</h3>
+			    <a href="#" class="btn btn-block btn-outline-dark">Explore</a>
+			</div>
+			
+			<div class="col-lg-3 services ">
+			    <img src="images/mobile-app.svg" class="img-fluid services-img">
+			   	<hr>
+			    <h3 class="card-subtitle mb-2 text-center">Mobile App Development</h3> 
+			    <a href="#" class="btn btn-block btn-outline-dark">Explore</a> 
+			</div>
+		</div>
+		
+	</section>
+
+	<!--OUr Team-->
+	<section id="ourteam">
+		<h1 class="text-center section-title">
+			Our Team
+		</h1>
+
+		<div class="sub-container">
+			<div class="members">
+				<img src="images/member-1.png">
+				<div class="name">Sheikh Asif Rahman</div>
+				<div class="post">CEO and Co-Founder</div>
+				<div class="social-media">
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-instagram"></i></a>
+					<a href="#"><i class="fa fa-google-plus"></i></a>
+				</div>
+			</div>
+
+			<div class="members">
+				<img src="images/member-2.png">
+				<div class="name">Saiyed Redwan Ahmed</div>
+				<div class="post">CTO and Co-Founder</div>
+				<div class="social-media">
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-instagram"></i></a>
+					<a href="#"><i class="fa fa-google-plus"></i></a>
+				</div>
+			</div>
+
+			<div class="members">
+				<img src="images/member-4.png">
+				<div class="name">Hasna Hena Mow</div>
+				<div class="post">Web Developer</div>
+				<div class="social-media">
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-instagram"></i></a>
+					<a href="#"><i class="fa fa-google-plus"></i></a>
+				</div>
+			</div>
+
+			<div class="members">
+				<img src="images/member-3.png">
+				<div class="name">Shadman Ahmed</div>
+				<div class="post">Just a Coder</div>
+				<div class="social-media">
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-instagram"></i></a>
+					<a href="#"><i class="fa fa-google-plus"></i></a>
+				</div>
+			</div>
+		</div>
+		
+		
+	</section>	
+
+	<section id="ourwork">
+		<h1 class="text-center section-title">
+			Our Work
+		</h1>
+
+		<h1 class='text-center'>Under Maintainance</h1>
+
+	</section>
+
+
+
+
+
+	
+
+
+
+
+
+	<!--Boostrap JS-->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+	<!--Bootstrap JS End-->
+
+
+	<script type="text/javascript" src="assets/js/app.js"></script>
+	
+
+</body>
+</html>
