@@ -13,6 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
   </head>
   <body>
@@ -102,7 +103,13 @@
       </div>
 
       <div class="project-item">
-        <div class="container">
+        <div
+          class="container"
+          data-aos="fade-right"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
           <div class="row text-center">
             <div class="col-lg-6 project-info">
               <h1>CRM For Small Business</h1>
@@ -119,7 +126,13 @@
           </div>
         </div>
 
-        <div class="container">
+        <div
+          class="container"
+          data-aos="fade-left"
+          ata-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
           <div class="row text-center">
             <div class="col-lg-6 project-info">
               <h1>Interactive TO-DO App</h1>
@@ -148,7 +161,13 @@
           <h1 class="section-title text-center">About</h1>
         </div>
 
-        <p class="text-center">
+        <p
+          class="text-center"
+          data-aos="fade-right"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
           I am a Competitive Programmer and Web Developer, living in Dhaka,
           Bangladesh. I make web applications, usually with django. I like to
           code things from scratch and enjoy bringing ideas to life in the
@@ -157,7 +176,13 @@
           My Technical Stack:
         </p>
         <br />
-        <div class="row">
+        <div
+          class="row"
+          data-aos="fade-left"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
           <div class="logo-wrapper col-sm-6 col-md-3">
             <a
               href="#"
@@ -285,7 +310,13 @@
 
     <!--Contact Form -->
     <section id="contact">
-      <div class="contact container">
+      <div
+        class="contact container"
+        data-aos="fade-left"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+      >
         <h1 class="section-title text-center">Get In Touch</h1>
 
         <script type="text/javascript">
@@ -385,5 +416,11 @@
     ></script>
     <script type="text/javascript" src="assets/js/app.js"></script>
     <!--Bootstrap JS End-->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      console.log("AOS Init");
+    </script>
   </body>
 </html>
