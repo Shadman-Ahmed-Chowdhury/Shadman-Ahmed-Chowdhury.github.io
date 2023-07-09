@@ -1,0 +1,17 @@
+body {
+    font-family: 'Andika', sans-serif;
+}
+.intro {
+    padding-top: 200px;
+    width: 70%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+.name {
+    font-size: 25px;
+    font-weight: bold;
+}
+.grey-text {
+    color: #686868;
+}
