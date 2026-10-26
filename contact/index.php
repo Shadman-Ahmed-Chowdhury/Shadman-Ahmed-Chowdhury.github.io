@@ -13,8 +13,10 @@
  * Fill in the TODO config values below before deploying.
  */
 
-// ---- Config: fill these in -------------------------------------------------
+// Stopping the file execution for now.
+exit;
 
+// ---- Config: fill these in -------------------------------------------------
 // Cloudflare Turnstile site key (public - safe to commit).
 // TODO: replace with your real site key from the Cloudflare dashboard.
 const TURNSTILE_SITE_KEY = 'XXXXXXXXXXXXXXXXXXXXXXXXXX';
